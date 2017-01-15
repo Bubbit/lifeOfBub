@@ -8,8 +8,6 @@
  * subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
  */
 
-'use strict';
-
 // Documentation on what goes into PolymerProject.
 const path = require('path');
 const gulp = require('gulp');
