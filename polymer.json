@@ -1,0 +1,8 @@
+{
+  "entrypoint": "public/index.html",
+  "shell": "public/life-of-bub.html",
+  "extraDependencies": [
+    "public/bower_components/webcomponentsjs/webcomponents-lite.min.js"
+  ]
+
+}
