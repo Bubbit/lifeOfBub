@@ -1,16 +1,20 @@
 <link rel="import" href="bower_components/polymerfire/firebase-auth.html">
-<link rel="import" href="bower_components/paper-button/paper-button.html">
+<link rel="import" href="bower_components/paper-icon-button/paper-icon-button.html">
+<link rel="import" href="bower_components/paper-toolbar/paper-toolbar.html">
+<link rel="import" href="bower_components/iron-icons/social-icons.html">
 
 <dom-module id="lob-login">
   <template>
     <firebase-auth id="auth" app-name="life-of-bub" user="{{user}}" status-known="{{statusKnown}}" provider="google">
     </firebase-auth>
 
-    <template is="dom-if" if="[[user]]">
-      <h1>Welkom [[user.displayName]]</h1>
-    </template>
-    <paper-button raised on-tap="login" hidden$="[[user]]">Sign in</paper-button>
-    <paper-button raised on-tap="logout" hidden$="[[!user]]">Sign out</paper-button>
+    <paper-toolbar>
+      <template is="dom-if" if="[[user]]">
+        <h1 class="title">Welcome [[user.displayName]]</h1>
+      </template>
+      <paper-icon-button icon="social:person" on-tap="login" hidden$="[[user]]">Sign in</paper-icon-button>
+      <paper-icon-button icon="exit-to-app" on-tap="logout" hidden$="[[!user]]">Sign out</paper-icon-button>
+    </paper-toolbar>
   </template>
 
   <script>
@@ -25,11 +29,11 @@
         }
       },
 
-      login: function() {
+      login: function () {
         return this.$.auth.signInWithPopup();
       },
 
-      logout: function() {
+      logout: function () {
         return this.$.auth.signOut();
       }
     });
