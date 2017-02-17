@@ -8,4 +8,4 @@ install:
   - npm i
   - bower i
 after_success:
-  - firebase deploy
+  - firebase deploy --token ${FIREBASE_TOKEN}
