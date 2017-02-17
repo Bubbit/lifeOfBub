@@ -7,7 +7,7 @@
     </firebase-auth>
 
     <template is="dom-if" if="[[user]]">
-      <h1>Welcome [[user.displayName]]</h1>
+      <h1>Welkom [[user.displayName]]</h1>
     </template>
     <paper-button raised on-tap="login" hidden$="[[user]]">Sign in</paper-button>
     <paper-button raised on-tap="logout" hidden$="[[!user]]">Sign out</paper-button>
