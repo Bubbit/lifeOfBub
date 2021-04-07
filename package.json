@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "author": "",
   "license": "ISC",
@@ -18,6 +20,8 @@
   },
   "dependencies": {
     "global": "^4.3.1",
-    "polymer-cli": "next"
-  }
+    "polymer-cli": "1.9.6",
+    "snyk": "^1.526.0"
+  },
+  "snyk": true
 }
