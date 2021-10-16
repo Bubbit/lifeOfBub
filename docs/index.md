@@ -1,3 +1,3 @@
-# Welcome to Your Rocket Site
+# Welcome to my Site
 
-Add your markdown content here.
+Here I'll be adding random things regarding my blogs and stuff I work on overtime.
