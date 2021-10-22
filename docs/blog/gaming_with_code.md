@@ -1,52 +1,87 @@
 ---
-title: Introducing Check HTMl Links - no more bad links
+title: Gaming with code
 published: false
-description: A fast link checker for static HTML
-tags: [html, javascript, webdev, node]
-cover_image: https://dev-to-uploads.s3.amazonaws.com/i/an9z6f4hdll2jlne43u3.jpg
+description: What kind of non-professional fun can you have with code
+tags: [ gaming, competitions]
+cover_image: https://dev-to-uploads.s3.amazonaws.com/uploads/articles/osspoqv5wv14tcztry7j.jpeg
 ---
 
-In my day to day life as a programmer, one of the main things I run into are pull requests. Either I made them myself and am waiting for a review, or I am asked to review a pull request from a colleague.
+Since I was a little boy I always liked to play games, from starting with vidoe games and board games.
+The main reason I started getting interested in starting to become a programmer was also due to my love of video games.
 
-A pull request is a method of working within the coding community to get your peers to review, and ultimately approve your code contributions and merge them into the main branch.
+While being a programmer one of the things that you do in general is to either keep up with your current programming language and changes that are added to it or learning new programming languages.
+By default you always have your 'sample' apps that you try to create as first, in front-end world the 'to-do' list app is one that comes to mind.
+For me this is boring after your 10th to-do list, hence why I look for different methods to improve and sharpen my programming 'knifes'.
 
-In this blog post I want to share my three ways of reviewing pull requests and some general remarks that apply to all three approaches.
+On a day to day basis we all face certain challenges on our jobs, but for me mostly they are not the algorithmical challenges that make me think in different ways.
 
-General remarks
-- Don't be afraid to ask questions if something is unclear.
-- Pull requests (PR's) should have a short life. PR's that are open for too long will go out of sync in an active code base and create more and more work.
-- Repeating yourself in a review, ie. commenting the same thing on a repeating factor, can be seen as negative. Try to keep it to one remark that includes the other cases.
-- All automated tests should pass in any situation and need to be added if applicable.
+Luckily for me, there are many ways I can combine my love for gaming and my thirst for learning and keep challenging myself.
+In this post I'll go over a few different ways that gaming and coding are combined these days.
 
-## Open source reviewing
-A few years ago I was attending a presentation by [Pieter Hintjens](https://www.youtube.com/watch?v=uzxcILudFWM&ab_channel=DomCode) regarding managing Open Source communities. One of the things that I remember from this talk was his view on how to handle pull requests within such a community and what 'joy' it sparks for a contributor to get their pull requests merged quickly. His way of reviewing was to not really review it, just merge and see later if it works. If it breaks revert it or fix it yourself.
-![Alt Text](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/ne9lat7v5keh8b9jgjme.gif)
-Back then, my initial reaction was this is never going to work in the projects I work on. However over the years I have started to develop my own way of reviewing pull requests, and I have to say that his approach does work within some projects I have worked on, Open Source and internal ones.
+## Different kind of 'coding'
 
-## Intense reviewing
-This is the most 'nit-picky' way of reviewing a pull request. Intense reviewing is used within our team at work to uphold strict styling, test coverage and a way of writing code in order to keep our code base synced across multiple repositories.
-During this kind of reviewing process you go file by file and check if there are (CI system should indicate) any issues regarding leftover `console.logs`, missing semicolons and more importantly, stuff that is hard to detect for 'linting' tooling, typo's, missing comments if necessary etc.
+- As an addition to your games
+  - Think about macros in MMORPGs
+  - Mods for games etc.
+  - Managing a ripped of version of a paid game...
 
-These kinds of issues of course do not need a long comment. In our team we sometimes just resort into using either an emoji or just a `?`. Make sure that you only do this if you know it is not perceived as a 'bad comment' else it can have a negative effect.
+- Coding in games
+  - Use code to complete actual game objectives
 
-The next step of this review process is to really understand why certain decisions are made, especially if you think you would have solved this issue with solution A, but solution B was chosen.
-Here are two ways of commenting on this kind of topic:
-The telling way: 'I think solution A is way better' or (in my opinion) the better, questioning way: 'Why did you choose solution B here?'.
-If you are not satisfied with the reasoning, you can go in to a more detailed questioning, e.g. 'Do you think solution A would be better?' Keeping it as a question should spark a discussion and hopefully you both learn something out of it, in the end it does not matter which solution is chosen.
-![Alt Text](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/8qflerb05gg9u5vljroj.gif)
-The aim of a review process like this is to completely understand the reasoning of how and why this code change has been done,  especially to make sure their are no [broken windows](https://www.artima.com/articles/dont-live-with-broken-windows) in the code base you and your team are responsible for.
+- Competition based coding
+  - Coding algorithms to learn
+  - Team based competitions solving problems
+  - CTF's
 
-Another benefit when using a review style like this with newer developers is that they have a 'safety net' while coding, which means that they should feel like they can try things, won't break anything and also learn and improve themselves.
+## Coding in games
 
-## Quality driven reviewing
-Quality driven reviewing is a way of PR reviewing if something is currently required, but in the long run is not going to be there. e.g. something that is required for a short migration period, this is the middle ground of the three types of reviewing.
-Sometimes your team needs to release a feature that is temporary (yes I know, most things temporary in a code base are still there four years later) or under a very tight deadline. 
+Code is central in these games
 
-![Alt Text](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/x1ydkyrgd56a9muc534j.gif)
+Most known to me is Hacknet or while true: learn()
 
-Deadlines or temporary solutions are never an argument for bad code. The intense way of reviewing normally takes a bit more time and sometimes could be a waste at that moment due to the duration the code will live in the code base, or take too long for a deadline that needs to be met. During this way of reviewing you check if the code is correct and does not break anything else. Even if you think that solution A should be replaced with solution B as it's 'better' or 'more in style' this can be skipped unless it is necessary for performance/stability. 
+## Competition based coding
 
-Just to be sure, only pick this method of reviewing if you cannot do the intense way of reviewing, it is doing the bare minimum, but sometimes that can be enough.
+Bulk of the 'learning' for me.
+- Algorithmic
+- New tools
+- Challenging
 
-Do you have other ways of reviewing or do you have any remarks regarding the ones I have mentioned here? Let me know!
-Also do you sometimes do the fourth option of reviewing, namely 
+### Codewars
+
+- Useful as a learning tool for improving language knowledge
+- Small challenges you can do daily/weekly
+- More random compared to other platforms as Hackerrank etc.
+
+
+### Hash code
+
+- Team based algoritmic competition held around the world
+- Difficult 'real life challenges to solve'
+
+### CTF
+
+- More towards red security testing
+- Learn a lot about the systems we work with
+- Very very challenging at the start
+
+### Code golf
+
+- Never use this at work
+- Make the smallest code possible, character count
+
+```
+;''
+6666,-2%{2+.2/@*\/10.3??2*+}*
+`1000<~\;
+```
+
+## Special shoutout
+
+Advent of code
+- Competition held every year around the world
+- Every day a new challenge
+- Big community with amazing results
+
+## Question to you!
+
+Do you use tools like gaming with code as a learning source?
