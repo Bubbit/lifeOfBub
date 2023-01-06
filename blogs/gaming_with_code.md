@@ -1,4 +1,5 @@
 ---
+layout: layouts/blog.njk
 title: Gaming with code
 published: false
 description: What kind of non-professional fun can you have with code

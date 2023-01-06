@@ -1,4 +1,5 @@
 ---
+layout: layouts/blog.njk
 title: How I review
 published: true
 description: My 3 ways of reviewing pull requests

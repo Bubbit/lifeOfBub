@@ -1,0 +1,25 @@
+---
+layout: layouts/base
+---
+<style>
+  /* Blog Styles */
+  body {
+    color: #333;
+    font-size: 16px;
+  }
+  a {
+    color: #009688;
+  }
+  main {
+    background: url(/assets/img/bg.png) repeat;
+  }
+</style>
+
+<a class="back-to-index" href="/#blog">
+  Back to blog index
+</a>
+<main>
+  <article>
+    {{ content | safe }}
+  </article>
+</main>
