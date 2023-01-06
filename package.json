@@ -1,19 +1,16 @@
 {
-  "name": "life-of-bub",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "@example/basics",
+  "version": "0.0.1",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "rocket start",
-    "docs": "rocket build"
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
   },
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
-    "@rocket/blog": "^0.4.0",
-    "@rocket/cli": "^0.10.0",
-    "@rocket/launch": "^0.6.0"
-  },
-  "type": "module"
+    "@astrojs/deno": "^3.0.0",
+    "astro": "^1.9.1"
+  }
 }
