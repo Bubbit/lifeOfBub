@@ -5,19 +5,27 @@
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "build": "npx @11ty/eleventy"
+        "build": "rimraf dist && rollup -c rollup.config.js",
+        "start": "web-dev-server --app-index index.html --node-resolve --open --watch"
     },
     "author": "",
     "license": "ISC",
     "devDependencies": {
         "@11ty/eleventy": "^1.0.2",
-		"@tailwindcss/typography": "^0.3.1",
-		"cross-env": "^7.0.3",
-		"eleventy-plugin-tailwindcss": "^0.3.0",
-		"html-minifier": "^4.0.0",
-		"luxon": "^1.24.1",
-		"rimraf": "^3.0.2",
-		"terser": "^4.8.0"
+        "@open-wc/building-rollup": "^2.2.1",
+        "@tailwindcss/typography": "^0.3.1",
+        "@web/dev-server": "^0.0.12",
+        "cross-env": "^7.0.3",
+        "deepmerge": "^4.2.2",
+        "eleventy-plugin-tailwindcss": "^0.3.0",
+        "html-minifier": "^4.0.0",
+        "luxon": "^1.24.1",
+        "rimraf": "^3.0.2",
+        "rollup-plugin-copy-assets": "^2.0.3",
+        "terser": "^4.8.0"
     },
-    "type": "module"
+    "type": "module",
+    "dependencies": {
+        "firebase": "^9.17.1"
+    }
 }
